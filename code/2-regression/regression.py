@@ -33,3 +33,12 @@ regressor.fit(X_train, y_train)
 
 # predicting salary with the created model
 y_pred = regressor.predict(X_test)
+
+# plot the graph between predicted and real salary
+
+plt.scatter(X_train, y_train, color='red')
+plt.plot(X_train, regressor.predict(X_train), color='blue')
+plt.title('Salary vs Experience in Years')
+plt.xlabel('Years of Experience')
+plt.ylabel('Salary in $')
+plt.show()
