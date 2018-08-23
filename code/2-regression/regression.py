@@ -43,3 +43,11 @@ plt.title('Salary vs Experience in Years')
 plt.xlabel('Years of Experience')
 plt.ylabel('Salary in $')
 plt.show()
+
+# now let's test our model on Test Data
+plt.scatter(X_test, y_test, color='red')
+plt.plot(X_test, regressor.predict(X_test), color='blue')
+plt.title('Salary vs Experience in Years')
+plt.xlabel('Years of Experience')
+plt.ylabel('Salary in $')
+plt.show()
